@@ -1,0 +1,112 @@
+/* NAVBAR BASE */
+
+.navbar{
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  box-sizing: border-box;
+
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+
+  border-bottom:1px solid rgba(255,255,255,0.1);
+
+  z-index:1000;
+
+  transition:0.4s;
+}
+
+/* SCROLL EFFECT */
+
+.navbar.scrolled{
+  background:#000;
+  box-shadow:0 5px 20px rgba(0,0,0,0.6);
+}
+
+/* LOGO */
+
+.logo{
+  font-size:26px;
+  font-weight:bold;
+  color:white;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:35px;
+}
+
+/* LINK STYLE */
+
+.nav-links li a{
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+  position:relative;
+  transition:0.3s;
+}
+
+/* HOVER ANIMATION */
+
+.nav-links li a::after{
+  content:"";
+  position:absolute;
+  width:0%;
+  height:2px;
+  left:0;
+  bottom:-5px;
+  background:#00e5ff;
+  transition:0.3s;
+}
+/* 
+.nav-links li a:hover::after{
+  width:100%;
+} */
+
+/* ACTIVE PAGE */
+
+.active{
+  color:#00e5ff;
+}
+
+/* MOBILE MENU */
+
+.menu-icon{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .menu-icon{
+    display:block;
+    color:white;
+  }
+
+  .nav-links{
+    position:absolute;
+    right:0;
+    top:70px;
+    flex-direction:column;
+    background:#111;
+    width:220px;
+    padding:25px;
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+}

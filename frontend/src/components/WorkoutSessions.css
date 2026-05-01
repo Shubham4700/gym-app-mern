@@ -1,0 +1,41 @@
+.workout-section{
+padding:80px;
+background:#0f2027;
+color:white;
+text-align:center;
+}
+
+.workout-container{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.workout-card{
+width:250px;
+background:#1c2e3a;
+border-radius:12px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.workout-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.workout-card h3{
+margin:10px;
+}
+
+.workout-card button{
+margin:10px;
+padding:10px;
+border:none;
+background:#00c6ff;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}

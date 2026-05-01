@@ -1,0 +1,35 @@
+.gym-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 70vh;
+}
+
+.gym-card {
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: all 0.6s ease;
+  display: flex;
+  align-items: flex-end;
+}
+
+.gym-card h2 {
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  font-size: 28px;
+}
+
+.gym-card.active {
+  flex: 5;
+}
+
+.gym-card.active h2 {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.3s;
+}
