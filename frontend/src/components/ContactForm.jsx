@@ -20,7 +20,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   // ✅ API BASE (future deployment ready)
-  const API_URL = "http://localhost:5000";
+  const API_URL = "https://gym-app-mern.onrender.com";
 
   // ✅ SUBMIT FUNCTION (FIXED)
   const handleSubmit = async (e) => {
