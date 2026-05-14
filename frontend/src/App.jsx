@@ -76,7 +76,7 @@ const Layout = () => {
   const hideNavbar = hideNavbarRoutes.includes(location.pathname);
 
   return (
-    <>
+    < >
       {!hideNavbar && <NavBar/>}
 
       <Routes>

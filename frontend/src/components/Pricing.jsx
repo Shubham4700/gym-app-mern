@@ -69,7 +69,7 @@ const Pricing = () => {
         </h2>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 overflow-hidden">
 
           {plans.map((plan, index) => (
             <motion.div
