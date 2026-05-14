@@ -12,7 +12,7 @@ import {
 import { useState } from "react";
 import { ClipLoader } from "react-spinners";
 
-const Contact = () => {
+const Contact = () => { 
   // ✅ STATE
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

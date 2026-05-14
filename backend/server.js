@@ -56,6 +56,11 @@ app.use("/api/admin",adminRoute);
 const feedbackRoute = require("./routes/feedbackRoute");
 app.use("/api",feedbackRoute);
 
+app.use(cors({
+  origin:"https://gym-app-mern-two.vercel.app/",
+  credential: true
+}));
+
 // const trainerRoute = require("./routes/trainerRoute");
 // app.use("/api",trainerRoute);
 
